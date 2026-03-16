@@ -1,2 +1,18 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+1. create an empty array arr
+2. for(while the i (which will act as the index) is less than the length of the string run the loop, then add 1 to i)
+3. in the loop, create an empty string
+4. in the loop, create another loop: for(set j to i. while j is less than the length of the string, run the loop, then add 1 to j)
+5. in the nested loop assign the empty string current to the letter at string[j]
+6. add current to array arr
+7. return arr
+
+
+create an empty array.
+loop over the string
+loop over the string again, this time, adding the string at index j to current. each time adding current to arr
+
+the big O is O(n^2)
+the nested loops cause the input to run twice each time
