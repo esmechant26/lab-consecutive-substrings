@@ -1,9 +1,15 @@
 function consecutiveSubstrings(string) {
   let arr = [];
   for (let i = 0; i < string.length; i++) {
+    //loop through each element in string starting at 0
+    //declare an empty string to hold the current element
     let current = "";
     for (let j = i; j < string.length; j++) {
+      //while the first loop is still at starting place 0, begin the second loop
+      //loop runs until it hits the end of the string
+      //adds the element at string[j] to the current string
       current += string[j];
+      //pushes the updated string current to arr
       arr.push(current);
     }
   }
